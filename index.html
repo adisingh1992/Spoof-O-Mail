@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>SPOOF-O-MAIL</title>
+		<link href="images/mail.ico" rel="icon" sizes="16x16"/> 
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+		<script>
+			function redirect(){
+				location.href="index.html";
+			}
+		</script>
+	</head>
+	<body>
+		<h1 onclick='redirect()'>SPOOF-O-MAIL</h1>
+		<form method="POST" action="process.php">
+			<div id="form">
+				<input type="email" name="from" placeholder="Enter The E-mail Of The Sender (REQUIRED)" required/>
+				<br/><br/>
+				<input type="email" name="to" placeholder="Enter The E-mail Of The Recipient (REQUIRED)" required/>
+				<br/><br/>
+				<input type="text" name="subject" placeholder="Enter The E-mail Subject (REQUIRED)" required/>
+				<br/><br/>
+				<textarea rows="10" cols="20" name="msg" placeholder="Message Content"></textarea>
+				<br/><br/>
+				<input type="submit" id="b1" value="SUBMIT"/>
+			</div>
+		</form>
+	</body>
+</html>

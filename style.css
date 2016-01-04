@@ -1,0 +1,31 @@
+body{
+	background-image: url("images/mail_background.jpg");
+}
+
+h1{
+	font-family: chiller;
+	text-shadow: 10px 10px 15px;
+	font-size: 7em;
+	text-align: center;
+	margin-bottom: 2%;
+	cursor: pointer;
+}
+
+#b1{
+	background: linear-gradient(to bottom right, #81BEF7, white);
+	font-family: courier;
+	font-size: 1.5em;
+	text-shadow: 2px 2px 5px;
+}
+
+#b1:hover{
+	font-weight: bold;
+	box-shadow: 5px 5px 20px #A4A4A4;
+}
+
+#form input, textarea{
+	border-radius: 5px;
+	margin-left: 25%;
+	padding: 1%;
+	width: 50%;
+}
