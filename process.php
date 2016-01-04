@@ -29,7 +29,7 @@ function message($num){
 }
 
 function send_mail($from, $to, $subject, $msg){
-	$headers = "FROM: $from";
+	$headers = "From: <'.$from.'>";
 	mail($to, $subject, $msg, $headers);
 	return message(2);
 }
